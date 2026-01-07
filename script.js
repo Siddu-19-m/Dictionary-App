@@ -17,7 +17,7 @@
         })
         
         .then(data => {
-            document.getElementById("meaning").innerText = data[0].meanings[0].definations[0].defination;
+            document.getElementById("meaning").innerText = data[0].meanings[0].definitions [0].definition;
             document.getElementById("pos").innerText = data[0].meanings[0].partOfSpech;
             document.getElementById("example").innerText = data[0].meanings[0].example || "No eaxmple available"
         })
@@ -61,3 +61,4 @@ function searchWord() {
             alert("Word not found");
         });
 }
+
